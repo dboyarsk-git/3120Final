@@ -1,33 +1,31 @@
-# 3120Final — GitHub Pages project site
+# 3120Final — GitHub Pages website (v2)
 
-A static, single-link site for **ECGR 3120: Magnetically Steered Cardiac Ablation**, designed with a bold monochrome editorial aesthetic.
+This version fixes broken images and PDF links on the deployed GitHub repository by using the actual **root-level file layout**.
 
-## The three views
+## Publish the fix
 
-1. **Directions** — project summary, five milestones, original handout, and deliverables.
-2. **Presentation** — keyboard-controlled slide deck and reserved YouTube video space.
-3. **Technical report** — accessible research summaries, full existing Milestone 1–3 PDFs, and a PDF viewer.
+Upload the **contents** of this directory directly to the root of `dboyarsk-git/3120Final` on the `main` branch. In particular, replace `index.html` and `script.js` with these updated versions. Do not create an extra `3120Final-v2` folder in the repository.
 
-The site is an early-stage showcase. Milestones 4 and 5 and the final video are NOT completed; placeholders are deliberately labeled. Current example results are illustrative, and the professor's official acceptance tests have not been run.
+All PNG and PDF files belong at the root alongside `index.html`, exactly as they currently are in the public repository. You do not have to reupload these if they are unchanged.
 
-## Deploy to GitHub Pages
+The homepage is `https://dboyarsk-git.github.io/3120Final/`.
 
-1. On GitHub create or open the repository named **3120Final**.
-2. Upload the **contents** of this folder (not the outer folder), including `index.html`, `styles.css`, `script.js`, `assets/`, and `reports/`.
-3. Commit the files to the `main` branch.
-4. Open **Settings → Pages**. Under *Build and deployment*, select **Deploy from a branch**, `main`, and **/(root)**. Save.
-5. Your site should be available at `https://YOUR-GITHUB-USERNAME.github.io/3120Final/` once Pages publishes. Repository names are case-sensitive in URLs.
+Examples of corrected links:
+- `m1_field.png`
+- `m1_axis.png`
+- `Milestone1_Report.pdf`
+- `PROJECT_HANDOUT.pdf`
 
-This uses only HTML, CSS, and JavaScript. No npm or build step is necessary. Open `index.html` to preview locally; PDF embeds may behave more reliably when served over HTTP.
+After committing, allow the Pages deployment to finish and hard-reload your browser (Cmd+Shift+R).
 
-## When the project is complete
+## Site structure
 
-- Add final technical report and the one-page recommendation into `reports/`, and link them from the report tab.
-- Replace the current summary slides with final presentation slides. Current slide definitions are in `script.js` under `const slides`.
-- Add a YouTube video ID to `const VIDEO_ID` in `script.js` to embed the walkthrough directly under the deck.
-- Update Milestones 4–5's statuses on the directions page and replace the future sections in the report view.
-- Review all student/team names, citations, test status, and numbers prior to publishing.
+- Section 1: Directions
+- Section 2: Presentation (with future video section)
+- Section 3: Technical reports and embedded PDF viewer
 
-## Important
+Milestones 4–5 remain clearly indicated as future work. Simulation values from Milestones 1–3 are illustrative. Do not assume the professor's official acceptance tests have passed.
 
-Public GitHub Pages sites expose their uploaded reports and source files. Before publishing, verify your professor allows public sharing of project materials. If not, keep source files private and share only course-authorized content. A private repository does not automatically imply a private Pages site.
+## IMPORTANT
+
+This repository is public. Confirm course permission before publishing the professor's handout or project materials.
