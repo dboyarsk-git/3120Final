@@ -33,3 +33,11 @@ This repository is public. Confirm course permission before publishing the profe
 
 ## Version 3 — slide image layout
 The slides with simulation figures now allocate an explicit flexible image row inside the 16:9 stage, and use `object-fit: contain`. This prevents images from spilling below the bottom slide bar at typical desktop and mobile sizes. Upload the contents of this folder to the repository root; `index.html` includes versioned asset URLs to refresh browser caches.
+
+
+## v4 change
+The original PROJECT_HANDOUT.pdf is embedded on page 1 (Directions) with an open-in-new-tab link; it has been removed from the page 3 Technical Report PDF selector. All milestone reports remain on page 3.
+
+## Version 5 — References page
+
+Fourth navigation page contains original project handout and Milestone 1–4 PDFs with clickable reference cards, selector and in-page preview. Milestone 5 stays a placeholder. PDFs remain in the repository root for GitHub Pages.

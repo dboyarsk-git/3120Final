@@ -97,3 +97,26 @@
   .slide-body.has-figure .slide-sub {font-size: 9px;line-height: 1.15;}
   .slide-body.has-figure .slide-label {font-size: 7px;}
 }
+
+/* v4: handout belongs to the directions page, not the report library */
+.assignment-document{margin:clamp(35px,6vw,90px) 0;padding:clamp(18px,3vw,48px);background:#f6f6f2;border:1px solid rgba(48,55,64,.16)}
+.assignment-document-heading{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:25px}
+.assignment-document-heading h2{font-size:clamp(32px,5.5vw,75px);line-height:.93;letter-spacing:-.035em;margin:12px 0}
+.assignment-document-heading p{max-width:650px;line-height:1.65;color:#59616a}
+.assignment-document-heading .outline-link{flex-shrink:0}
+.assignment-document iframe{display:block;width:100%;height:min(76vh,800px);min-height:450px;border:1px solid #cbd0d2;background:white}
+@media(max-width:700px){.assignment-document-heading{display:block}.assignment-document-heading .outline-link{display:inline-flex;margin-top:12px}.assignment-document iframe{height:65vh;min-height:360px}}
+
+/* Version 5 — dedicated reference document library */
+.reference-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:30px 0 50px}
+.reference-card{font:inherit;min-height:240px;display:flex;flex-direction:column;align-items:flex-start;text-align:left;gap:14px;padding:26px;background:#f7f7f4;border:1px solid #c8cbcb;color:#303740;cursor:pointer;transition:background .18s,border-color .18s}
+.reference-card:hover,.reference-card.selected{background:#e4e6e2;border-color:#303740}
+.reference-card strong{font-family:inherit;font-size:clamp(24px,3vw,40px);font-weight:900;letter-spacing:-.05em;line-height:.96}
+.reference-card .reference-index,.reference-card .reference-arrow{font-size:11px;letter-spacing:.13em;font-weight:800}
+.reference-card>span:nth-of-type(2){font-size:13px;color:#5d6570}
+.reference-arrow{margin-top:auto}
+.reference-pending{cursor:default;opacity:.65}
+#references .pdf-library{margin-top:30px}
+#references #pdf-frame{display:block;width:100%;height:min(83vh,900px);min-height:480px;background:#fff}
+@media(max-width:850px){.reference-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:550px){.reference-grid{grid-template-columns:1fr}.reference-card{min-height:175px}#references #pdf-frame{min-height:410px;height:70vh}}
