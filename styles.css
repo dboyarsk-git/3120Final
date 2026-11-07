@@ -128,3 +128,38 @@
 .slide-body.has-figure .slide-img{display:block; flex:1 1 0; height:0; min-height:0; width:100%; max-height:none; object-fit:contain; object-position:center;}
 .slide-body.has-figure .slide-foot{flex:0 0 auto; margin-top:0;font-size:clamp(8px,.8vw,11px);}
 @media(max-width:700px){.slide-body.has-figure{padding:2% 3%;gap:1%}.slide-body.has-figure .slide-title.small{font-size:clamp(14px,4vw,30px)}.slide-body.has-figure .slide-sub{font-size:clamp(8px,1.5vw,11px)}}
+
+/* v7: same original project-deck design; ensure mobile type and decorative geometry never overlap */
+.slide-chain{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:clamp(4px,1vw,18px);padding:clamp(8px,1.5vw,22px) clamp(5px,1vw,14px);background:var(--dark);color:white;font-size:clamp(8px,1.15vw,18px);font-weight:800;letter-spacing:.04em}
+.slide-chain b{color:var(--accent);font-size:1.25em}
+.comparison-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2%;margin-top:auto;margin-bottom:auto}
+.comparison-stats>div{border-top:3px solid #69737b;padding:clamp(6px,1.4vw,22px) 4px;display:flex;flex-direction:column;gap:clamp(5px,1.4vw,24px)}
+.comparison-stats>div.featured{border-top-color:var(--accent);background:#eee9e1}
+.comparison-stats b{font:700 clamp(25px,5vw,72px)/1 'Oswald',sans-serif;white-space:nowrap}
+.comparison-stats b small{font-size:.35em;letter-spacing:0}
+.comparison-stats span{font-size:clamp(11px,1.55vw,23px);font-weight:700}
+.slide-body:not(.has-figure){justify-content:space-between}
+.slide-body:not(.has-figure) .slide-title{font-size:clamp(26px,6vw,94px);line-height:.96;position:relative;z-index:2}
+.slide-body:not(.has-figure) .slide-sub{position:relative;z-index:2;max-width:65%}
+.slide-body:not(.has-figure) .slide-strip{position:relative;z-index:2;min-height:10%}
+.slide-body:not(.has-figure) .slide-foot{position:relative;z-index:2}
+.slide-visual{pointer-events:none;opacity:.65;right:3%;bottom:17%;width:31%;height:48%;z-index:1}
+@media(max-width:800px){
+ .slide-body:not(.has-figure){padding:3% 4%;gap:1%}
+ .slide-body:not(.has-figure) .slide-title{font-size:clamp(22px,5.4vw,51px)}
+ .slide-body:not(.has-figure) .slide-sub{font-size:clamp(10px,1.55vw,15px);line-height:1.2;max-width:80%}
+ .slide-body:not(.has-figure) .slide-foot{font-size:clamp(7px,.9vw,10px)}
+ .slide-visual{width:25%;height:42%;bottom:20%;right:3%;opacity:.4}
+ .slide-visual span{font-size:clamp(15px,3.2vw,35px);padding:3px}
+ .comparison-stats span{font-size:clamp(8px,1.5vw,15px)}
+}
+@media(max-width:550px){
+ .slide-body:not(.has-figure) .slide-sub{max-width:100%;font-size:9px}
+ .slide-body:not(.has-figure) .slide-title{font-size:clamp(18px,5.5vw,31px)}
+ .slide-visual{display:none}
+ .slide-chain{font-size:7px;gap:3px}
+ .slide-chain b{font-size:9px}
+ .comparison-stats b{font-size:clamp(17px,4.8vw,29px)}
+ .comparison-stats span{font-size:8px}
+ .slide-strip{font-size:clamp(7px,1.5vw,10px);padding:0 3px}
+}

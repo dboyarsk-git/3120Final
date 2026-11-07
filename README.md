@@ -1,11 +1,12 @@
-# 3120Final Website v6 — official baseline update
+# 3120Final v7 — existing design, 12-slide final presentation
 
-Four pages: Directions, Presentation (nine slides), Technical Report (all five milestones), References (all five historical milestone PDFs, handout, verified 10-page combined report and one-page recommendation).
+- Four pages unchanged: Directions, Presentation, Technical Report, References.
+- All existing site files, figures and PDFs retained.
+- Original charcoal sidebar, bold typography, controls, and off-white/orange accent preserved.
+- Presentation expanded from 9 to 12 slides, matching the companion speaker dialogue.
+- Image scale uses contain; mobile intro decoration adjusted to avoid overlapping text.
+- No website upload or new video required. Speaker notes are separate from the public site.
 
-**Upload the CONTENTS of this ZIP into the repository root**, not the containing folder, commit, and hard-refresh GitHub Pages.
+**Upload:** Extract this ZIP and upload the contents (not the enclosing folder) to the root of your existing `3120Final` GitHub Pages repository. Commit and refresh the website.
 
-The v6 website uses the **professor starter-kit baseline**, not the old illustrative operating points. The old milestone PDFs remain in References as *earlier illustrative-development reports*.
-
-The video section is a placeholder until you upload a YouTube recording. To embed a video, set `VIDEO_ID` in script.js.
-
-Official supplied tests: 29/29 passed in the separate code audit, with 36 stub function bodies filled. Not a clinically validated device.
+**Modified files:** `index.html`, `script.js`, `styles.css`, `README.md`.
