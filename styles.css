@@ -120,3 +120,11 @@
 #references #pdf-frame{display:block;width:100%;height:min(83vh,900px);min-height:480px;background:#fff}
 @media(max-width:850px){.reference-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:550px){.reference-grid{grid-template-columns:1fr}.reference-card{min-height:175px}#references #pdf-frame{min-height:410px;height:70vh}}
+
+/* v6 — ensure tall multi-panel simulation figures remain fully inside slides */
+.slide-body.has-figure{min-height:0; overflow:hidden; display:flex; flex-direction:column; justify-content:flex-start; padding:3% 4%; gap:1.1%;}
+.slide-body.has-figure .slide-title.small{font-size:clamp(19px,3.7vw,51px);line-height:.95;margin:0;}
+.slide-body.has-figure .slide-sub{font-size:clamp(10px,1.2vw,16px);line-height:1.25;margin:0;}
+.slide-body.has-figure .slide-img{display:block; flex:1 1 0; height:0; min-height:0; width:100%; max-height:none; object-fit:contain; object-position:center;}
+.slide-body.has-figure .slide-foot{flex:0 0 auto; margin-top:0;font-size:clamp(8px,.8vw,11px);}
+@media(max-width:700px){.slide-body.has-figure{padding:2% 3%;gap:1%}.slide-body.has-figure .slide-title.small{font-size:clamp(14px,4vw,30px)}.slide-body.has-figure .slide-sub{font-size:clamp(8px,1.5vw,11px)}}
