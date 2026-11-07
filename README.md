@@ -29,3 +29,7 @@ Milestones 4–5 remain clearly indicated as future work. Simulation values from
 ## IMPORTANT
 
 This repository is public. Confirm course permission before publishing the professor's handout or project materials.
+
+
+## Version 3 — slide image layout
+The slides with simulation figures now allocate an explicit flexible image row inside the 16:9 stage, and use `object-fit: contain`. This prevents images from spilling below the bottom slide bar at typical desktop and mobile sizes. Upload the contents of this folder to the repository root; `index.html` includes versioned asset URLs to refresh browser caches.
