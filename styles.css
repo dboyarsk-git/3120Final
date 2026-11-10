@@ -327,3 +327,6 @@
   object-position: center;
   margin: 0;
 }
+
+/* Video source link for browsers that block embedded players */
+.video-external{margin:14px 0 0;text-align:right;font-size:13px;font-weight:700;letter-spacing:.04em}.video-external a{text-decoration:underline;text-underline-offset:3px}.video-external a:hover{color:var(--accent)}
