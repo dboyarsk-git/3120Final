@@ -1,6 +1,6 @@
 # ECGR 3120 — Final Technical Review (official starter-kit baseline)
 
-**Project:** Magnetically Steered Cardiac Ablation — **Student:** Dashia Boyarskiy — **Instructor:** Dr. Joy  
+**Project:** Magnetically Steered Cardiac Ablation — **Students:** Dashia Boyarskiy and Tatiana Soriano — **Instructor:** Dr. Joy  
 **Status:** Official supplied acceptance suite: **29/29 passed** after completing **36 stubs** in a separate working copy. All original uploads remain unchanged. All provided milestone drivers M0–M5 executed and generated figures.
 
 ## Main correction to prior individual milestone reports
